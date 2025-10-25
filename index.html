@@ -743,7 +743,7 @@ const juzStarts = [
     function buildJuzNav(){
       const $nav = $("#juzNav");
       $nav.empty();
-      for(let i=1;i<=6;i++){
+      for(let i=1;i<=15;i++){
         const btn = $("<button>").text(`BAB ${i}`).on("click", ()=>goTo(juzStarts[i-1]));
         $nav.append(btn);
       }
