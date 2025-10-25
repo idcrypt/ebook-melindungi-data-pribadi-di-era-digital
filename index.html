@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-  <title>BUKU AI SD/MI Kelas 5 Semester 1: Belajar Logika, Coding Visual, Literasi Digital, dan AI</title>
+  <title>BUKU Melindungi Data Pribadi di Era Digital: Panduan Praktis untuk Indonesia</title>
 
   <!--
     Catatan: file ini sengaja verbose (banyak komentar & struktur) agar mudah dibaca.
-    Total halaman diatur oleh TOTAL_PAGES (default 267).
+    Total halaman diatur oleh TOTAL_PAGES (default 122).
     Pastikan:
       - images/page1.png ... images/page950.png tersedia
       - sounds/flip.mp3 tersedia
@@ -253,11 +253,11 @@
   <!-- App -->
   <div class="wrap" id="app" style="display:none;">
     <header>
-      <h1>BUKU AI SD/MI Kelas 5 Semester 1: Belajar Logika, Coding Visual, Literasi Digital, dan AI</h1>
+      <h1>BUKU Melindungi Data Pribadi di Era Digital:Panduan Praktis untuk Indonesia</h1>
       <div style="display:flex;gap:10px;align-items:center">
         <button id="fullscreenToggle" class="btn secondary">Toggle Fullscreen</button>
         <button id="themeToggle" class="btn secondary">🌙 Theme</button>
-        <div id="pageInfo" class="info">Halaman 1 / 70</div>
+        <div id="pageInfo" class="info">Halaman 1 / 122</div>
       </div>
     </header>
 
@@ -278,7 +278,7 @@
 
       <div class="goto">
         <label style="color:var(--muted)">Ke halaman</label>
-        <input id="gotoInput" type="number" min="1" max="70" value="1">
+        <input id="gotoInput" type="number" min="1" max="122" value="1">
         <button id="gotoBtn" class="btn">Go</button>
       </div>
     </div>
@@ -309,11 +309,11 @@
     /* =========================
        CONFIG & STATE
        ========================= */
-    const TOTAL_PAGES = 70;     // sesuaikan kalau berubah
+    const TOTAL_PAGES = 122;     // sesuaikan kalau berubah
     const PER_BLOCK = 10;        // pagination per block
-    const A4_ASPECT = 1.41421356; // tinggi/lebar ≈ 297/210
-    const MAX_BOOK_WIDTH = 70; // maksimal lebar book (adjustable)
-    const PRELOAD_COUNT = 70;    // halaman pertama yang dipreload sebelum sembunyikan loader
+    const A4_ASPECT = 1.41421356; // tinggi/lebar ≈ 122/122
+    const MAX_BOOK_WIDTH = 122; // maksimal lebar book (adjustable)
+    const PRELOAD_COUNT = 122;    // halaman pertama yang dipreload sebelum sembunyikan loader
 
     let currentPage = 1;         // halaman aktif (1-based)
     let currentBlock = 1;
@@ -714,7 +714,7 @@
     // Build juz navigation based on TOTAL_PAGES distribution (even split) — user can adjust mapping if needed
     function computeJuzStarts(){
       const arr = [];
-      const per = TOTAL_PAGES / 6;
+      const per = TOTAL_PAGES / 15;
       for(let i=0;i<10;i++){
         const page = Math.max(1, Math.round(i * per) + 1); // 1-based
         arr.push(page);
@@ -726,11 +726,17 @@
 // Sesuaikan nomor halamannya dengan versi PDF / image kamu
 const juzStarts = [
   8,  // Juz 2
-  19,  // Juz 3
-  30,  // Juz 4
-  40,  // Juz 5
-  50, // Juz 6
-  60
+  17,  // Juz 3
+  26,  // Juz 4
+  33,  // Juz 5
+  41, // Juz 6
+  48,
+  56,
+  63,
+  77,
+  82,
+  90,
+  101
 ];
 
 
