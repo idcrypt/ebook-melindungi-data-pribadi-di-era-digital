@@ -1,4 +1,4 @@
-# BUKU AI SD/MI Kelas 5 Semester 1: Belajar Logika, Coding Visual, Literasi Digital, dan AI
+# BUKU Melindungi Data Pribadi di Era Digital: Panduan Praktis untuk Indonesia
 Aolia Ikhwanudin
 Onno W. Purbo
 Institut Teknologi Tangerang Selatan (ITTS)
